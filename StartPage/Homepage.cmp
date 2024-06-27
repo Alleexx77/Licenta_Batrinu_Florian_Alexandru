@@ -1,0 +1,304 @@
+<aura:component implements="flexipage:availableForAllPageTypes" access="global">
+    <c:Navbar />
+
+    <aura:attribute name="isAuthenticated" type="Boolean" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+
+    <div class="slds-p-around_medium">
+        <aura:if isTrue="{!v.isAuthenticated}">
+            <!-- Autentificat-->
+            <div data-aura-rendered-by="309:0" class="siteforcePrmBody" data-aura-class="siteforcePrmBody">
+                <a data-aura-rendered-by="315:0" href="javascript:void(0);" class="forceSkipLink" data-aura-class="forceSkipLink">Skip to Navigation</a><a data-aura-rendered-by="320:0" href="javascript:void(0);" class="forceSkipLink" data-aura-class="forceSkipLink">Skip to Main Content</a>
+                <div class="cHeaderWrapper cHeaderWrapper--fixed" data-aura-rendered-by="323:0">
+                   <!--render facet: 324:0-->
+                   <div class="cHeader slds-container--fluid" data-aura-rendered-by="325:0">
+                      <div class="cHeaderTop slds-p-vertical--small" data-aura-rendered-by="326:0">
+                         <div class="cHeaderTopInternalWrapper slds-grid slds-is-relative slds-container--fluid slds-grid--vertical-align-center" data-aura-rendered-by="327:0">
+                            <community_navigation-global-navigation-trigger class="cAltToggleNav slds-icon_x-small" data-aura-rendered-by="328:0">
+                               <lightning-button-icon variant="bare" size="medium" lwc-485vfn4rmof-host="">
+                                  <button lwc-485vfn4rmof="" class="slds-button slds-button_icon slds-button_icon-bare" type="button" aria-expanded="false" part="button button-icon" title="Toggle Menu">
+                                     <lightning-primitive-icon lwc-485vfn4rmof="" exportparts="icon" variant="bare" lwc-29758b5h9ll-host="">
+                                        <svg focusable="false" aria-hidden="true" viewBox="0 0 520 520" part="icon" lwc-29758b5h9ll="" data-key="rows" class="slds-button__icon">
+                                           <g lwc-29758b5h9ll="">
+                                              <path d="M465 140H55c-8 0-15-7-15-15V95c0-8 7-15 15-15h410c8 0 15 7 15 15v30c0 8-7 15-15 15zm0 149H55c-8 0-15-7-15-15v-30c0-7 7-14 15-14h410c8 0 15 7 15 15v30c0 7-7 14-15 14zm0 151H55c-8 0-15-7-15-15v-30c0-8 7-15 15-15h410c8 0 15 7 15 15v30c0 8-7 15-15 15z" lwc-29758b5h9ll=""></path>
+                                           </g>
+                                        </svg>
+                                     </lightning-primitive-icon>
+                                     <span class="slds-assistive-text" lwc-485vfn4rmof="">Toggle Menu</span>
+                                  </button>
+                               </lightning-button-icon>
+                               <community_navigation-back-navigation-button></community_navigation-back-navigation-button>
+                            </community_navigation-global-navigation-trigger>
+                            <div class="cLogo" data-aura-rendered-by="329:0"><a href="javascript:void(0);" title="demoPartnerPortal" class="cBrandingLogo" data-aura-rendered-by="330:0"><span class="assistiveText" data-aura-rendered-by="331:0">demoPartnerPortal</span></a></div>
+                            <div class="slds-col_bump-left" data-aura-rendered-by="333:0"></div>
+                            <div class="cSearchContainer slds-container--fluid slds-grid" data-aura-rendered-by="335:0">
+                               <div class="cSearch slds-container--fluid" data-aura-rendered-by="336:0">
+                                  <div data-region-name="search" data-item-id="a993044d-a4ff-477d-ad29-d0ca29ed9aef" data-aura-rendered-by="297:0">
+                                     <div data-priority="" data-item-id="0727a6d2-12f1-4252-b71c-ff699bc10692" class="ui-widget" data-aura-rendered-by="294:0">
+                                        <!--render facet: 168:0-->
+                                        <div class="slds-global-header__item slds-global-header__item--search forceCommunityGlobalSearchInput" data-aura-rendered-by="169:0" data-aura-class="forceCommunityGlobalSearchInput">
+                                           <div class="slds-grid slds-nowrap slds-text-body--regular slds-text-color--weak slds-is-relative forceSearchInputDesktop" data-aura-rendered-by="199:0" data-aura-class="forceSearchInputDesktop">
+                                              <div class="contentWrapper slds-size--1-of-1 slds-nowrap slds-border_top slds-border_left slds-border_right slds-border_bottom slds-grid slds-grid--vertical-align-center slds-scrollable_none" data-aura-rendered-by="200:0">
+                                                 <!--render facet: 201:0-->
+                                                 <div class="slds-form-element__control slds-input-has-icon slds-input-has-icon--left" data-aura-rendered-by="203:0">
+                                                    <lightning-icon icon-name="utility:search" class="slds-icon-utility-search slds-text-color--weak slds-input__icon inputIcon searchIcon slds-p-left--x-small slds-button__icon slds-icon_container forceIcon" data-data-rendering-service-uid="62" data-aura-rendered-by="207:0" lwc-4897l11qtae-host="" data-aura-class="forceIcon">
+                                                       <span lwc-4897l11qtae="" style="--sds-c-icon-color-background: var(--slds-c-icon-color-background, transparent)" part="boundary">
+                                                          <lightning-primitive-icon lwc-4897l11qtae="" exportparts="icon" size="xx-small" variant="inverse" lwc-45bd2ao4vb7-host="">
+                                                             <svg focusable="false" aria-hidden="true" viewBox="0 0 520 520" part="icon" lwc-45bd2ao4vb7="" data-key="search" class="slds-icon slds-icon_xx-small">
+                                                                <g lwc-45bd2ao4vb7="">
+                                                                   <path d="M496 453L362 320a189 189 0 10-340-92 190 190 0 00298 135l133 133a14 14 0 0021 0l21-21a17 17 0 001-22zM210 338a129 129 0 11130-130 129 129 0 01-130 130z" lwc-45bd2ao4vb7=""></path>
+                                                                </g>
+                                                             </svg>
+                                                          </lightning-primitive-icon>
+                                                       </span>
+                                                    </lightning-icon>
+                                                 </div>
+                                                 <div class="inputWrapper slds-grid slds-grid--align-center slds-grid--vertical-align-center slds-size--1-of-1" data-aura-rendered-by="208:0">
+                                                    <div class="slds-grid slds-no-flex slds-m-right--xx-small forceSearchInputDesktopPillWrapper" data-aura-rendered-by="212:0" data-aura-class="forceSearchInputDesktopPillWrapper">
+                                                       <div class="slds-col" data-aura-rendered-by="213:0">
+                                                          <!--render facet: 214:0-->
+                                                       </div>
+                                                    </div>
+                                                    <div class="autocompleteWrapper slds-grow slds-form-element__control" data-aura-rendered-by="215:0">
+                                                       <div data-aura-rendered-by="388:0" class="uiInput uiAutocomplete uiInput--default" data-aura-class="uiInput uiAutocomplete uiInput--default">
+                                                          <input role="combobox" aria-autocomplete="list" maxlength="100" aria-expanded="false" aria-haspopup="true" type="text" title="Search..." aria-describedby="" id="216:0" placeholder="Search..." class="slds-input slds-text-color_default slds-p-left--none slds-size--1-of-1 input default input uiInput uiInputTextForAutocomplete uiInput--{remove}" aria-activedescendant="" data-aura-rendered-by="244:0" data-aura-class="uiInput uiInputTextForAutocomplete uiInput--{remove}" data-interactive-lib-uid="2" autocomplete="off" spellcheck="false"><!--render facet: 245:0--><!--render facet: 248:0--><!--render facet: 249:0--><!--render facet: 250:0-->
+                                                          <label for="216:0" class="uiLabel-hidden form-element__label uiLabel" data-aura-rendered-by="383:0" data-aura-class="uiLabel">
+                                                             <span id="216:0-label" class="assistiveText" data-aura-rendered-by="384:0">Search...</span><!--render facet: 386:0--><!--render facet: 387:0-->
+                                                          </label>
+                                                       </div>
+                                                       <!--render facet: 253:0-->
+                                                    </div>
+                                                    <div class="inputSpinner slds-is-absolute slds-hide" data-aura-rendered-by="254:0">
+                                                       <span class="slds-assistive-text" data-aura-rendered-by="255:0">Loading...</span>
+                                                       <div role="alert" aria-hidden="false" class="slds-spinner--brand slds-spinner slds-spinner--small" data-aura-rendered-by="257:0">
+                                                          <div class="slds-spinner__dot-a" data-aura-rendered-by="258:0"></div>
+                                                          <div class="slds-spinner__dot-b" data-aura-rendered-by="259:0"></div>
+                                                       </div>
+                                                    </div>
+                                                 </div>
+                                              </div>
+                                           </div>
+                                           <!--render facet: 262:0--><!--render facet: 278:0-->
+                                        </div>
+                                     </div>
+                                  </div>
+                               </div>
+                               <lightning-icon icon-name="utility:close" class="slds-icon-utility-close cSearchExit slds-icon_container" data-aura-rendered-by="338:0" lwc-4897l11qtae-host="">
+                                  <span lwc-4897l11qtae="" style="--sds-c-icon-color-background: var(--slds-c-icon-color-background, transparent)" part="boundary">
+                                     <lightning-primitive-icon lwc-4897l11qtae="" exportparts="icon" size="x-small" variant="" lwc-3bq099ugqsh-host="">
+                                        <svg focusable="false" aria-hidden="true" viewBox="0 0 520 520" part="icon" lwc-3bq099ugqsh="" data-key="close" class="slds-icon slds-icon-text-default slds-icon_x-small">
+                                           <g lwc-3bq099ugqsh="">
+                                              <path d="M310 254l130-131c6-6 6-15 0-21l-20-21c-6-6-15-6-21 0L268 212a10 10 0 01-14 0L123 80c-6-6-15-6-21 0l-21 21c-6 6-6 15 0 21l131 131c4 4 4 10 0 14L80 399c-6 6-6 15 0 21l21 21c6 6 15 6 21 0l131-131a10 10 0 0114 0l131 131c6 6 15 6 21 0l21-21c6-6 6-15 0-21L310 268a10 10 0 010-14z" lwc-3bq099ugqsh=""></path>
+                                           </g>
+                                        </svg>
+                                     </lightning-primitive-icon>
+                                     <span class="slds-assistive-text" lwc-4897l11qtae="">Cancel</span>
+                                  </span>
+                               </lightning-icon>
+                            </div>
+                            <a href="javascript:void(0);" class="cSearchInvokeMobile" data-aura-rendered-by="339:0">
+                               <lightning-icon icon-name="utility:search" class="slds-icon-utility-search slds-icon_container" data-aura-rendered-by="340:0" lwc-4897l11qtae-host="">
+                                  <span lwc-4897l11qtae="" style="--sds-c-icon-color-background: var(--slds-c-icon-color-background, transparent)" part="boundary">
+                                     <lightning-primitive-icon lwc-4897l11qtae="" exportparts="icon" size="x-small" variant="" lwc-45bd2ao4vb7-host="">
+                                        <svg focusable="false" aria-hidden="true" viewBox="0 0 520 520" part="icon" lwc-45bd2ao4vb7="" data-key="search" class="slds-icon slds-icon-text-default slds-icon_x-small">
+                                           <g lwc-45bd2ao4vb7="">
+                                              <path d="M496 453L362 320a189 189 0 10-340-92 190 190 0 00298 135l133 133a14 14 0 0021 0l21-21a17 17 0 001-22zM210 338a129 129 0 11130-130 129 129 0 01-130 130z" lwc-45bd2ao4vb7=""></path>
+                                           </g>
+                                        </svg>
+                                     </lightning-primitive-icon>
+                                     <span class="slds-assistive-text" lwc-4897l11qtae="">Search</span>
+                                  </span>
+                               </lightning-icon>
+                            </a>
+                            <div class="cNotifications" data-aura-rendered-by="342:0">
+                               <div data-aura-rendered-by="346:0">
+                                  <!--render facet: 351:0-->
+                                  <div data-target-selection-name="89957d541b0841849e6a3633bcff5869" data-aura-rendered-by="4:83;a" class="unsNotificationsCounter" data-aura-class="unsNotificationsCounter">
+                                     <div data-aura-rendered-by="15:83;a" class="forceHeaderButton" data-aura-class="forceHeaderButton">
+                                        <button aria-expanded="false" aria-haspopup="dialog" type="button" class="slds-button slds-button slds-button_icon slds-button_icon slds-button_icon-container slds-button_icon-small slds-global-actions__notifications slds-global-actions__item-action" data-aura-rendered-by="27:83;a">
+                                           <!--render facet: 28:83;a-->
+                                           <div aria-describedby="tt-for-17:83;a" tabindex="-1" class="tooltipTrigger tooltip-trigger uiTooltip" data-aura-rendered-by="22:83;a" data-aura-class="uiTooltip">
+                                              <div class="headerButtonBody" data-aura-rendered-by="6:83;a">
+                                                 <lightning-icon icon-name="utility:notification" class="slds-icon-utility-notification slds-button__icon slds-global-header__icon slds-icon_container forceIcon" data-data-rendering-service-uid="74" data-aura-rendered-by="10:83;a" lwc-4897l11qtae-host="" data-aura-class="forceIcon">
+                                                    <span lwc-4897l11qtae="" style="--sds-c-icon-color-background: var(--slds-c-icon-color-background, transparent)" part="boundary">
+                                                       <lightning-primitive-icon lwc-4897l11qtae="" exportparts="icon" size="x-small" variant="inverse" lwc-6acnr0aecm4-host="">
+                                                          <svg focusable="false" aria-hidden="true" viewBox="0 0 520 520" part="icon" lwc-6acnr0aecm4="" data-key="notification" class="slds-icon slds-icon_x-small">
+                                                             <g lwc-6acnr0aecm4="">
+                                                                <path d="M460 330h-5a35 35 0 01-35-35V180A160 160 0 00252 20c-86 4-152 78-152 165v111c0 19-16 34-35 34h-5c-22 0-40 19-40 41v15c0 7 7 14 15 14h450c8 0 15-7 15-15v-15a40 40 0 00-40-40zM309 440h-98a10 10 0 00-10 12c5 28 30 48 59 48s54-21 59-48a10 10 0 00-10-12z" lwc-6acnr0aecm4=""></path>
+                                                             </g>
+                                                          </svg>
+                                                       </lightning-primitive-icon>
+                                                    </span>
+                                                 </lightning-icon>
+                                                 <span class="countDot slds-hidden" data-aura-rendered-by="11:83;a"><span class="counterLabel" data-aura-rendered-by="12:83;a">0</span></span>
+                                              </div>
+                                              <span role="tooltip" id="tt-for-17:83;a" class="tooltip-invisible" data-aura-rendered-by="24:83;a">Notifications</span>
+                                           </div>
+                                           <!--render facet: 31:83;a-->
+                                        </button>
+                                     </div>
+                                  </div>
+                                  <!--render facet: 32:83;a-->
+                                  <div aria-live="assertive" aria-atomic="true" class="slds-assistive-text" data-aura-rendered-by="33:83;a"></div>
+                               </div>
+                            </div>
+                            <div class="cProfileMenu slds-m-left--x-small" data-aura-rendered-by="354:0">
+                               <div data-region-name="profileMenu" data-item-id="4214046a-e9d7-4849-a5a3-84fe7fe33cc5" data-aura-rendered-by="157:0">
+                                  <div data-priority="" data-item-id="5deb8f79-4bd9-4764-847f-b164cec951a2" class="ui-widget" data-aura-rendered-by="154:0">
+                                     <!--render facet: 150:0-->
+                                     <div data-aura-rendered-by="72:43;a" class="uiMenu selfServiceUserProfileMenu" data-aura-class="uiMenu selfServiceUserProfileMenu">
+                                        <div id="3:43;a" data-aura-rendered-by="15:43;a" class="uiPopupTrigger selfServiceProfileMenuTrigger" data-aura-class="uiPopupTrigger selfServiceProfileMenuTrigger" data-interactive-uid="2">
+                                           <div data-aura-rendered-by="17:43;a">
+                                              <div data-aura-rendered-by="12:43;a"><a role="button" aria-expanded="false" aria-haspopup="true" class="trigger-link  " aria-label="Alexandru.Batrinu@focality.ro.procuremen" data-aura-rendered-by="5:43;a" href="javascript:void(0);"><img src="/DemoPartnerPortal/profilephoto/005/T" alt="" title="Alexandru.Batrinu@focality.ro.procuremen" class=" profileIcon" data-aura-rendered-by="7:43;a"><span class=" profileName" data-aura-rendered-by="8:43;a">Alexandru.Batrinu@focality.ro.procuremen</span><span class="triggerDownArrow down-arrow" data-aura-rendered-by="10:43;a"></span></a></div>
+                                           </div>
+                                        </div>
+                                        <div class="menuList popupTargetContainer uiPopupTarget uiMenuList uiMenuList--default " data-aura-rendered-by="67:43;a" data-aura-class="uiPopupTarget uiMenuList uiMenuList--default" aria-labelledby="3:43;a">
+                                           <div role="menu" class="menuList" data-aura-rendered-by="61:43;a">
+                                              <!--render facet: 62:43;a-->
+                                              <ul role="presentation" class="scrollable" data-aura-rendered-by="63:43;a">
+                                                 <!--render facet: 64:43;a-->
+                                              </ul>
+                                           </div>
+                                        </div>
+                                     </div>
+                                  </div>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                      <div tabindex="-1" class="slds-container--fluid" data-aura-rendered-by="356:0">
+                         <div data-region-name="navBar" data-item-id="0d49c7b0-7ca9-4b24-bb96-66a5f31435a6" data-aura-rendered-by="304:0">
+                            <div data-priority="" data-item-id="baad4c52-9e9e-4801-ba01-3da5b15e5e7e" class="ui-widget" data-aura-rendered-by="11:144;a">
+                               <div class="comm-navigation forceCommunityGlobalNavigation" data-aura-rendered-by="3:144;a" data-aura-class="forceCommunityGlobalNavigation">
+                                  <community_navigation-global-navigation-list data-aura-rendered-by="4:144;a">
+                                     <div class="slds-grid slds-grid_vertical-align-center slds-p-horizontal--x-small">
+                                        <div class="comm-navigation__navigation-trigger slds-p-vertical--xx-small slds-p-horizontal--small slds-grid">
+                                           <community_navigation-global-navigation-trigger>
+                                              <lightning-button-icon variant="bare" size="large" lwc-485vfn4rmof-host="">
+                                                 <button lwc-485vfn4rmof="" class="slds-button slds-button_icon slds-button_icon-bare" type="button" aria-expanded="false" part="button button-icon" title="Toggle Menu">
+                                                    <lightning-primitive-icon lwc-485vfn4rmof="" exportparts="icon" variant="bare" lwc-29758b5h9ll-host="">
+                                                       <svg focusable="false" aria-hidden="true" viewBox="0 0 520 520" part="icon" lwc-29758b5h9ll="" data-key="rows" class="slds-button__icon slds-button__icon_large">
+                                                          <g lwc-29758b5h9ll="">
+                                                             <path d="M465 140H55c-8 0-15-7-15-15V95c0-8 7-15 15-15h410c8 0 15 7 15 15v30c0 8-7 15-15 15zm0 149H55c-8 0-15-7-15-15v-30c0-7 7-14 15-14h410c8 0 15 7 15 15v30c0 7-7 14-15 14zm0 151H55c-8 0-15-7-15-15v-30c0-8 7-15 15-15h410c8 0 15 7 15 15v30c0 8-7 15-15 15z" lwc-29758b5h9ll=""></path>
+                                                          </g>
+                                                       </svg>
+                                                    </lightning-primitive-icon>
+                                                    <span class="slds-assistive-text" lwc-485vfn4rmof="">Toggle Menu</span>
+                                                 </button>
+                                              </lightning-button-icon>
+                                              <community_navigation-back-navigation-button></community_navigation-back-navigation-button>
+                                           </community_navigation-global-navigation-trigger>
+                                        </div>
+                                     </div>
+                                  </community_navigation-global-navigation-list>
+                               </div>
+                               <!--render facet: 8:144;a--><!--render facet: 9:144;a-->
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                   <!--render facet: 358:0-->
+                </div>
+                <div tabindex="-1" style="max-width: 1440px; padding-top: 59px;" class="cCenterPanel slds-m-top--x-large slds-p-horizontal--medium" data-aura-rendered-by="359:0">
+                   <!--render facet: 569:0-->
+                   <div data-aura-rendered-by="642:0" class="siteforceSldsTwoCol84Layout siteforceContentArea" data-aura-class="siteforceSldsTwoCol84Layout siteforceContentArea">
+                      <div class="slds-col--padded comm-content-header comm-layout-column" data-aura-rendered-by="643:0">
+                         <div data-region-name="header" data-item-id="97362913-a1f5-4b8b-8e77-4402725ac36f" data-aura-rendered-by="617:0">
+                            <div data-priority="" data-item-id="5fd7c946-190c-4ab8-bebc-fb9bc51d0256" class="ui-widget" data-aura-rendered-by="614:0">
+                               <div data-aura-rendered-by="605:0" class="forceCommunityRichText forceCommunityRichTextInline" data-aura-class="forceCommunityRichText forceCommunityRichTextInline">
+                                  <div dir="ltr" data-aura-rendered-by="609:0" class="uiOutputRichText" data-aura-class="uiOutputRichText">
+                                     <h1 style="text-align: center;" data-aura-rendered-by="610:0"><strong style="color: rgb(30, 36, 67); font-size: 28px;">Welcome!</strong></h1>
+                                     <p style="text-align: center;" data-aura-rendered-by="610:0"><span style="font-size: 20px;">Work on your company profile, answer to RFPs and submit your offers!</span></p>
+                                     <!--render facet: 610:0-->
+                                  </div>
+                                  <div class="clear" data-aura-rendered-by="611:0"></div>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                      <div class="slds-grid slds-wrap slds-medium-nowrap slds-large-nowrap" data-aura-rendered-by="645:0">
+                         <div class="slds-col--padded slds-size--12-of-12 slds-medium-size--8-of-12 slds-large-size--8-of-12 comm-layout-column" data-aura-rendered-by="646:0">
+                            <div data-region-name="content" data-item-id="0858cce1-3c65-4e71-9eb8-433a87108129" data-aura-rendered-by="639:0">
+                               <div data-priority="" data-item-id="7c72b186-0431-4712-bd6a-56d54b3a9124" class="ui-widget" data-aura-rendered-by="633:0">
+                                  <div data-aura-rendered-by="624:0" class="forceCommunityRichText forceCommunityRichTextInline" data-aura-class="forceCommunityRichText forceCommunityRichTextInline">
+                                     <div dir="ltr" data-aura-rendered-by="628:0" class="uiOutputRichText" data-aura-class="uiOutputRichText">
+                                        <p data-aura-rendered-by="629:0"><img alt="" src="/DemoPartnerPortal/file-asset/HomeIMG?v=1" class="sfdcCbImage"></p>
+                                        <!--render facet: 629:0-->
+                                     </div>
+                                     <div class="clear" data-aura-rendered-by="630:0"></div>
+                                  </div>
+                               </div>
+                               <!--render facet: 637:0-->
+                            </div>
+                         </div>
+                         <div class="slds-col--padded slds-size--12-of-12 slds-medium-size--4-of-12 slds-large-size--4-of-12 comm-layout-column" data-aura-rendered-by="648:0">
+                            <div data-region-name="sidebar" data-item-id="3e6cc751-32e1-4b1c-bd7d-c9b362de984a" data-aura-rendered-by="598:0">
+                               <div data-priority="" data-item-id="ea1ef24c-4452-4021-b107-afc928ce962a" class="ui-widget" data-aura-rendered-by="595:0">
+                                  <!--render facet: 588:0-->
+                                  <div class="createRecordWrapper forceCommunityCreateRecordButton" data-aura-rendered-by="1:380;a" data-aura-class="forceCommunityCreateRecordButton">
+                                     <div class="menuItem uiMenu" data-aura-rendered-by="49:380;a" data-aura-class="uiMenu">
+                                        <div id="4:380;a" data-aura-rendered-by="17:380;a" class="uiPopupTrigger" data-aura-class="uiPopupTrigger" data-interactive-uid="3">
+                                           <div data-aura-rendered-by="19:380;a">
+                                              <div data-aura-rendered-by="12:380;a">
+                                                 <a aria-disabled="false" role="button" aria-describedby="" tabindex="0" aria-expanded="false" aria-haspopup="true" title="" class="triggerLink" data-aura-rendered-by="13:380;a" href="javascript:void(0);">
+                                                    <span class="triggerLabel truncate" data-aura-rendered-by="5:380;a">Quick Create</span>
+                                                    <lightning-icon icon-name="utility:down" class="slds-icon-utility-down triggerIndicator slds-button__icon slds-icon_container forceIcon" data-data-rendering-service-uid="150" data-aura-rendered-by="10:380;a" lwc-4897l11qtae-host="" data-aura-class="forceIcon">
+                                                       <span lwc-4897l11qtae="" style="--sds-c-icon-color-background: var(--slds-c-icon-color-background, transparent)" part="boundary">
+                                                          <lightning-primitive-icon lwc-4897l11qtae="" exportparts="icon" size="xx-small" variant="inverse" lwc-6qul4k2dv7m-host="">
+                                                             <svg focusable="false" aria-hidden="true" viewBox="0 0 520 520" part="icon" lwc-6qul4k2dv7m="" data-key="down" class="slds-icon slds-icon_xx-small">
+                                                                <g lwc-6qul4k2dv7m="">
+                                                                   <path d="M83 140h354c10 0 17 13 9 22L273 374c-6 8-19 8-25 0L73 162c-7-9-1-22 10-22z" lwc-6qul4k2dv7m=""></path>
+                                                                </g>
+                                                             </svg>
+                                                          </lightning-primitive-icon>
+                                                       </span>
+                                                    </lightning-icon>
+                                                 </a>
+                                              </div>
+                                           </div>
+                                        </div>
+                                        <div class="subMenu popupTargetContainer uiPopupTarget uiMenuList uiMenuList--default " data-aura-rendered-by="44:380;a" data-aura-class="uiPopupTarget uiMenuList uiMenuList--default" aria-labelledby="4:380;a">
+                                           <div role="menu" class="subMenu" data-aura-rendered-by="38:380;a">
+                                              <!--render facet: 39:380;a-->
+                                              <ul role="presentation" class="scrollable" data-aura-rendered-by="40:380;a">
+                                                 <!--render facet: 655:0-->
+                                                 <li role="presentation" class="subMenuItem uiMenuItem" data-aura-rendered-by="27:380;a" data-aura-class="uiMenuItem"><a data-aura-rendered-by="28:380;a" href="javascript:void(0);" role="menuitem" aria-disabled="false" tabindex="0" title="New Contact">New Contact</a></li>
+                                                 <li role="presentation" class="subMenuItem uiMenuItem" data-aura-rendered-by="33:380;a" data-aura-class="uiMenuItem"><a data-aura-rendered-by="34:380;a" href="javascript:void(0);" role="menuitem" aria-disabled="false" tabindex="0" title="New Case">New Case</a></li>
+                                              </ul>
+                                           </div>
+                                        </div>
+                                     </div>
+                                  </div>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                      <div class="slds-col--padded comm-content-footer comm-layout-column" data-aura-rendered-by="650:0">
+                         <!--render facet: 651:0-->
+                      </div>
+                   </div>
+                </div>
+                <div class="cFooterPanel" data-aura-rendered-by="361:0">
+                   <div data-region-name="footer" data-item-id="d613bab7-2b8a-40ef-9597-e88851215042" data-aura-rendered-by="142:0">
+                      <div data-priority="" data-item-id="1396f253-9d33-475f-ba7c-fca034a7bc2a" class="ui-widget" data-aura-rendered-by="139:0">
+                         <div data-aura-rendered-by="130:0" class="forceCommunityRichText forceCommunityRichTextInline" data-aura-class="forceCommunityRichText forceCommunityRichTextInline">
+                            <div dir="ltr" data-aura-rendered-by="134:0" class="uiOutputRichText" data-aura-class="uiOutputRichText">
+                               <p style="text-align: center;" data-aura-rendered-by="135:0"><img style="width: 1488.33px; height: 106.125px;" alt="" src="/DemoPartnerPortal/file-asset/footer1?v=1" class="sfdcCbImage"></p>
+                               <!--render facet: 135:0-->
+                            </div>
+                            <div class="clear" data-aura-rendered-by="136:0"></div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+             </div>
+                <!-- Neautentificat -->
+                <div>
+                    <h1>Welcome!</h1>
+                    <p>Work on your company profile, answer to RFPs and submit your offers!</p>
+                    <img src="{!$Resource.YourImageResource}" alt="Work on your company profile" class="slds-align_absolute-center"/>
+                </div>
+            </aura:set>
+        </aura:if>
+    </div>
+</aura:component>

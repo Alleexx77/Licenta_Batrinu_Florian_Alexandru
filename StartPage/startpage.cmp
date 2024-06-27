@@ -1,0 +1,42 @@
+<aura:component implements="flexipage:availableForAllPageTypes" access="global" controller="AuthenticationController">
+    <aura:attribute name="isAuthenticated" type="Boolean" default="false" />
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+
+    <div class="slds-context-bar">
+        <div class="slds-context-bar__primary slds-context-bar__item--divider-right">
+            <div class="slds-context-bar__icon-action">
+                <button class="slds-button slds-button_icon slds-context-bar__button">
+                    <lightning:icon iconName="utility:home" alternativeText="Home" size="small"/>
+                </button>
+            </div>
+            <span class="slds-context-bar__label-action slds-context-bar__app-name">
+                <span>DemoPartnerPortal</span>
+            </span>
+        </div>
+        <div class="slds-context-bar__secondary">
+            <aura:if isTrue="{!v.isAuthenticated}">
+                <nav class="slds-context-bar__secondary">
+                    <ul class="slds-grid">
+                        <li class="slds-context-bar__item"><a href="/onboarding" class="slds-context-bar__label-action">Onboarding</a></li>
+                        <li class="slds-context-bar__item"><a href="/qualification" class="slds-context-bar__label-action">Qualification&Compliance</a></li>
+                        <li class="slds-context-bar__item"><a href="/rfp" class="slds-context-bar__label-action">RFPs&Offers</a></li>
+                        <li class="slds-context-bar__item"><a href="/contracts" class="slds-context-bar__label-action">Contracts</a></li>
+                        <li class="slds-context-bar__item"><a href="/requests" class="slds-context-bar__label-action">Requests and Disputes</a></li>
+                        <li class="slds-context-bar__item"><a href="/collaboration" class="slds-context-bar__label-action">Collaboration</a></li>
+                        <li class="slds-context-bar__item"><a href="/tender" class="slds-context-bar__label-action">Tender</a></li>
+                    </ul>
+                </nav>
+                <aura:set attribute="else">
+                    <nav class="slds-context-bar__secondary">
+                        <ul class="slds-grid">
+                            <li class="slds-context-bar__item"><a href="/about" class="slds-context-bar__label-action">About</a></li>
+                            <li class="slds-context-bar__item"><a href="/become-a-supplier" class="slds-context-bar__label-action">Become a Supplier</a></li>
+                            <li class="slds-context-bar__item"><a href="/documents" class="slds-context-bar__label-action">Documents</a></li>
+                        </ul>
+                    </nav>
+                </aura:set>
+            </aura:if>
+        </div>
+    </div>
+</aura:component>
