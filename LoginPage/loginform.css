@@ -29,11 +29,11 @@
 
 .THIS  #error {
     text-align: center;
-    color:#FF0000;
+    color:#0099ff;
 }
 
 .THIS  .login-icon {
-    color:#ccc;font-size:22px;
+    color:#cccccc;font-size:22px;
 }
 
 .THIS #sfdc_password_container{

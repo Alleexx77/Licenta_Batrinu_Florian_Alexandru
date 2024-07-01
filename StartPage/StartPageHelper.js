@@ -6,7 +6,7 @@
             if (state === "SUCCESS") {
                 component.set("v.isAuthenticated", response.getReturnValue());
             } else {
-                console.error("Failed with state: ");
+                console.error("Failed with state:");
             }
         });
         $A.enqueueAction(action);

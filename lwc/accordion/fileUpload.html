@@ -1,0 +1,23 @@
+<template>
+    <lightning-card title="File Upload Example" icon-name="action:upload">
+        <div class="slds-p-around_medium">
+            <lightning-file-upload
+                label="Upload Files"
+                name="fileUploader"
+                record-id={recordId}
+                accept={fileTypes}
+                onuploadfinished={handleUploadFinished}>
+            </lightning-file-upload>
+            <template if:true={uploadedFiles}>
+                <h3>Uploaded Files:</h3>
+                <ul>
+                    <template for:each={uploadedFiles} for:item="file">
+                        <li key={file.documentId}>
+                            {file.name} - {file.documentId}
+                        </li>
+                    </template>
+                </ul>
+            </template>
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,24 @@
+<template>
+    <lightning-card title="Organisation Details - Legal office" icon-name="action:info">
+        <div class="slds-m-around_medium">
+            <lightning-input label="* Organization Name" value={organizationName} onchange={handleInputChange} data-id="organizationName" required></lightning-input>
+            <lightning-input label="Street" value={street} onchange={handleInputChange} data-id="street"></lightning-input>
+            <lightning-input label="City" value={city} onchange={handleInputChange} data-id="city"></lightning-input>
+            <lightning-input label="State/Province" value={stateProvince} onchange={handleInputChange} data-id="stateProvince"></lightning-input>
+            <lightning-input label="Country" value={country} onchange={handleInputChange} data-id="country"></lightning-input>
+            <lightning-input label="Zip/Postal Code" value={zipCode} onchange={handleInputChange} data-id="zipCode"></lightning-input>
+            <lightning-input label="* VAT Reg No" value={vatRegNo} onchange={handleInputChange} data-id="vatRegNo" required></lightning-input>
+            <lightning-input label="* Registered office email address" value={officeEmail} onchange={handleInputChange} data-id="officeEmail" required></lightning-input>
+            <lightning-input label="* Main Organisation Phone Number" value={orgPhone} onchange={handleInputChange} data-id="orgPhone" required></lightning-input>
+        </div>
+    </lightning-card>
+    <lightning-card title="User Details" icon-name="action:user">
+        <div class="slds-m-around_medium">
+            <lightning-input label="First Name" value={firstName} onchange={handleInputChange} data-id="firstName"></lightning-input>
+            <lightning-input label="Last Name" value={lastName} onchange={handleInputChange} data-id="lastName"></lightning-input>
+            <lightning-input label="* Primary Email Address" value={userEmail} onchange={handleInputChange} data-id="userEmail" required></lightning-input>
+            <lightning-input label="* Telephone" value={userPhone} onchange={handleInputChange} data-id="userPhone" required></lightning-input>
+            <lightning-button label="Next" onclick={handleNext} class="slds-m-top_medium" variant="brand"></lightning-button>
+        </div>
+    </lightning-card>
+</template>
