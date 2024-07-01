@@ -296,7 +296,7 @@
                 <div>
                     <h1>Welcome!</h1>
                     <p>Work on your company profile, answer to RFPs and submit your offers!</p>
-                    <img src="{!$Resource.YourImageResource}" alt="Work on your company profile" class="slds-align_absolute-center"/>
+                    <img src="{!$Resource.ImageResource}" alt="Work on your company profile" class="slds-align_absolute-center"/>
                 </div>
             </aura:set>
         </aura:if>

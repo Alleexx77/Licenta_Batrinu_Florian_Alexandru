@@ -1,0 +1,41 @@
+<template>
+    <p class="slds-text-heading_small">{activeSectionMessage}</p>
+
+    <lightning-button onclick={handleSetActiveSectionC} label="Company Details"></lightning-button>
+
+    <lightning-accordion class="example-accordion"
+                         onsectiontoggle={handleToggleSection}
+                         active-section-name="">
+        <lightning-accordion-section name="A" label="Company Details">
+            <p>This is the content area for Company Details.</p>
+            <p>.</p>
+            <p>.</p>
+            <p>.</p>
+            <p>The section height expands to fit your content.</p>
+        </lightning-accordion-section>
+
+        <lightning-accordion-section name="B" label="User Details">
+            <p>This is the content area for User Details.</p>
+            <p>.</p>
+            <p>.</p>
+            <p>.</p>
+            <p>The section height expands to fit your content.</p>
+        </lightning-accordion-section>
+
+        <lightning-accordion-section name="C" label="Activity Type">
+            <p>This is the content area for Activity Type.</p>
+            <p>.</p>
+            <p>.</p>
+            <p>.</p>
+            <p>The section height expands to fit your content.</p>
+        </lightning-accordion-section>
+
+        <lightning-accordion-section name="D" label="Offices">
+            <p>This is the content area for Offices.</p>
+            <p>.</p>
+            <p>.</p>
+            <p>.</p>
+            <p>The section height expands to fit your content.</p>
+        </lightning-accordion-section>
+    </lightning-accordion>
+</template>

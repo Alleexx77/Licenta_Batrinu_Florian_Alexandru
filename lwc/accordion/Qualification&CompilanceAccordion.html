@@ -1,0 +1,32 @@
+<template>
+    <lightning-card title="Qualification & Compliance" icon-name="action:approval">
+        <div class="slds-m-around_medium">
+            <lightning-button-menu alternative-text="Show menu" icon-name="utility:down" label="Qualification & Compliance">
+                <lightning-menu-item value="RequestQualification" label="Request Qualification" onclick={handleMenuSelect}></lightning-menu-item>
+                <lightning-menu-item value="Questionares" label="Questionares" onclick={handleMenuSelect}></lightning-menu-item>
+                <lightning-menu-item value="Qualifications" label="Qualifications" onclick={handleMenuSelect}></lightning-menu-item>
+            </lightning-button-menu>
+            
+            <p class="slds-text-heading_small">{activeSectionMessage}</p>
+
+            <lightning-button onclick={handleSetActiveSectionC} label="Open Section C"></lightning-button>
+
+            <lightning-accordion class="example-accordion" onsectiontoggle={handleToggleSection} active-section-name="B">
+                <lightning-accordion-section name="A" label="Request Qualification">
+                    <p>This is the content area for section A (Request Qualification).</p>
+                    <p>The section height expands to fit your content.</p>
+                </lightning-accordion-section>
+
+                <lightning-accordion-section name="B" label="Questionares">
+                    <p>This is the content area for section B (Questionares).</p>
+                    <p>The section height expands to fit your content.</p>
+                </lightning-accordion-section>
+
+                <lightning-accordion-section name="C" label="Qualifications">
+                    <p>This is the content area for section C (Qualifications).</p>
+                    <p>The section height expands to fit your content.</p>
+                </lightning-accordion-section>
+            </lightning-accordion>
+        </div>
+    </lightning-card>
+</template>

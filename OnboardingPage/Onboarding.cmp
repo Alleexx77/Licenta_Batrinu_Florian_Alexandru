@@ -1,0 +1,39 @@
+<aura:component controller="OnboardingController" implements="force:appHostable,flexipage:availableForAllPageTypes,force:hasRecordId" access="global">
+    <aura:attribute name="activityTypes" type="List" />
+    <aura:attribute name="selectedActivityTypes" type="List" default="[]" />
+    <aura:attribute name="office" type="Office__c" default="{ 'sobjectType': 'Office__c' }" />
+    
+    <lightning:card title="Onboarding">
+        <lightning:accordion allowMultipleSectionsOpen="true">
+            <lightning:accordionSection name="companyDetails" label="Company Details">
+                <lightning:input label="Account Name" value="{!v.office.Account_Name__c}" />
+                <lightning:input label="Email Address" value="{!v.office.Email_Address__c}" />
+                <lightning:input label="Address" value="{!v.office.Address__c}" />
+            </lightning:accordionSection>
+            <lightning:accordionSection name="userDetails" label="User Details">
+                <lightning:input label="User Name" value="{!v.office.User_Name__c}" />
+                <lightning:input label="User Phone Number" value="{!v.office.User_Phone_Number__c}" />
+                <lightning:input label="User Email Address" value="{!v.office.User_Email_Address__c}" />
+            </lightning:accordionSection>
+            <lightning:accordionSection name="activityType" label="Activity Type">
+                <lightning:select label="Please select the activity type:" multiple="true" value="{!v.selectedActivityTypes}">
+                    <aura:iteration items="{!v.activityTypes}" var="type">
+                        <option text="{!type.label}" value="{!type.value}" />
+                    </aura:iteration>
+                </lightning:select>
+            </lightning:accordionSection>
+            <lightning:accordionSection name="offices" label="Offices">
+                <lightning:input label="Office Name" value="{!v.office.Office_Name__c}" />
+                <lightning:input label="Office Email" value="{!v.office.Office_Email__c}" />
+                <lightning:input label="Office Phone Number" value="{!v.office.Office_Phone_Number__c}" />
+                <lightning:input label="Street" value="{!v.office.Office_Street__c}" />
+                <lightning:input label="City" value="{!v.office.Office_City__c}" />
+                <lightning:input label="State/Province" value="{!v.office.Office_State__c}" />
+                <lightning:input label="Zip/Postal Code" value="{!v.office.Office_Postal_Code__c}" />
+                <lightning:input label="Country" value="{!v.office.Office_Country__c}" />
+                <lightning:input label="Website" value="{!v.office.Office_Website__c}" />
+            </lightning:accordionSection>
+        </lightning:accordion>
+        <lightning:button label="Submit" onclick="{!c.handleSubmit}" variant="brand" />
+    </lightning:card>
+</aura:component>
