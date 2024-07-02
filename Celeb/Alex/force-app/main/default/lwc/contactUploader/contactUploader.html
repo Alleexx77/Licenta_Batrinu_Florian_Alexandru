@@ -1,0 +1,39 @@
+<template>
+    <lightning-card title="Contact Uploader" icon-name="custom:custom14">
+        <div class="slds-m-around_medium">
+            
+            <!-- Select Account Dropdown -->
+            <lightning-combobox
+                label="Select Target Account"
+                value={selectedAccountId}
+                options={accountOptions}
+                onchange={handleAccountChange}>
+            </lightning-combobox>
+
+            <!-- File Input with Descriptive Label, Icon, and Help Text -->
+            <lightning-input
+                type="file"
+                label="Choose CSV File (First Name, Last Name)"
+                onchange={handleFileChange}
+                icon-name="utility:upload"
+                help-text="Select a CSV file with columns for First Name and Last Name."></lightning-input>
+
+            <!-- Display Selected File Name -->
+            <div if:true={selectedFile}>
+                <p>Selected File: {selectedFile.name}</p>
+            </div>
+
+            <!-- Upload Button -->
+            <lightning-button label="Upload" onclick={handleUpload} variant="brand"></lightning-button>
+
+            <!-- Loading Spinner -->
+            <lightning-spinner if:true={isLoading} variant="brand" alternative-text="Loading"></lightning-spinner>
+
+            <!-- Error Message -->
+            <div if:true={errorMessages} class="slds-m-top_medium">
+                <lightning-alert message={errorMessages} variant="error"></lightning-alert>
+            </div>
+
+        </div>
+    </lightning-card>
+</template>
